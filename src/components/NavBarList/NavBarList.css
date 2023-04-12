@@ -1,0 +1,23 @@
+ul {
+    display:flex;
+    justify-content: space-around;
+    background-color: #0b0d17;
+    padding: 2rem;
+    flex-grow: .5;
+}
+
+li {
+    list-style-type: none;
+    display:flex;
+    gap: 1rem;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+}
+
+span {
+    color:white;
+}
+

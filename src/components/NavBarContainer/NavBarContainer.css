@@ -1,0 +1,8 @@
+nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20rem;
+    margin: 2rem;
+    margin-right: 0;
+}
