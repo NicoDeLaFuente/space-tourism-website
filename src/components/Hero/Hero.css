@@ -1,0 +1,30 @@
+.hero {
+    height: 100vh;
+    background-image: url("./background-home-mobile.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (min-width: 767px) {
+    .hero {
+        background-image: url("./background-home-tablet.jpg");
+    }
+    
+}
+
+@media screen and (min-width: 1439px) {
+    .hero {
+        background-image: url("./background-home-desktop.jpg");
+    }
+}
+
+
+/* .hero {
+    height: 100vh;
+    background-image:url("./background-home-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    padding-right: 0;
+} */

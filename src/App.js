@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 
-import NavBarContainer from './components/NavBarContainer/NavBarContainer';
+
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <div className="App">
-      <NavBarContainer/>
+      <Hero/>
       
     </div>
   );

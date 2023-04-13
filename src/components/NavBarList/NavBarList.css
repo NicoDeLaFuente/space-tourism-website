@@ -1,23 +1,106 @@
-ul {
+.nav {
+    position: absolute;
+    top:0;
+    right:0;
+    bottom: 0;
     display:flex;
-    justify-content: space-around;
-    background-color: #0b0d17;
-    padding: 2rem;
-    flex-grow: .5;
+    flex-direction: column;
+    align-items: end;
+    gap: 5rem;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    padding:1rem;
 }
 
-li {
+.navList {
+    display:flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 6rem;
+    padding-left: 2rem;
+}
+
+.navList li {
     list-style-type: none;
     display:flex;
     gap: 1rem;
 }
 
-a {
-    color:white;
+.navList a {
     text-decoration: none;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    
 }
 
-span {
-    color:white;
+.navList span {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    padding: .5rem;
 }
 
+.disabled {
+    display:none;
+}
+
+@media screen and (min-width: 767px) {
+    .disabled {
+        display:flex;
+    }
+
+    .nav {
+        bottom: auto;
+        top:auto;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navList {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 3rem;
+        background-color: transparent;
+        backdrop-filter: blur(50px);
+    }
+
+    .navList a {
+        line-height: auto;
+        padding: 2rem 0;
+    }
+
+    .navList span {
+        display:none;
+    }
+}
+
+
+@media screen and (min-width: 1439px) {
+    .nav {
+        padding: 0;
+        padding-left: 4rem;
+        left: 45rem;
+    }
+
+    .navList {
+        gap: 5rem;
+    }
+
+    .navList li {
+        gap: .5rem;
+    }
+
+    .navList a {
+        display:flex;
+        align-items: center;
+        border-bottom: 2px solid #FFFFFF;
+
+    }
+
+    .navList a span {
+        display:block;
+    }
+}

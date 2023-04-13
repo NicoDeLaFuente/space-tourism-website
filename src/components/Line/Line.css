@@ -1,0 +1,17 @@
+.line {
+    display: none;
+    z-index: 1000;
+    border-bottom:.1px solid grey;
+    height: 2px;
+    width: 600px;
+    position:absolute;
+    top: 4.5rem;
+    left: 10rem;
+}
+
+@media screen and (min-width: 1439px) {
+    .line {
+        display:block;
+        
+    }
+}

@@ -1,8 +1,17 @@
-nav {
+.header {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20rem;
-    margin: 2rem;
-    margin-right: 0;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+@media screen and (min-width: 767px) {
+
+    
+}
+
+@media screen and (min-width: 1439px) {
+    .header {
+        padding: 2rem;
+    }
 }
