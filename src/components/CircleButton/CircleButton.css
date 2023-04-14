@@ -1,4 +1,4 @@
-.circleButton {
+/* .circleButton {
     font-family: 'Bellefair', serif;;
     font-size: 25px;
     padding: 4rem 2rem;
@@ -28,10 +28,42 @@
         transform: scale(1.2);
         transition: all 1s ease;
     }
+} */
 
-    @keyframes transform {
-        0% {background-color: red;}
-        50% {background-color: red;}
-        100%{backdrop-filter: blur(40%);}
+.circleButton {
+    font-family: 'Bellefair', serif;
+    font-size: 25px;
+    border: none;
+    width: 200px;
+    height: 200px;
+    letter-spacing: 2.7px;
+    border-radius: 50%;
+    position: absolute;
+    left: 23%;
+    right: 23%;
+    bottom: 3%;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+    .circleButton {
+        left: 37%;
+        right: 37%;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .circleButton {
+        width: auto;
+        height: auto;
+        position: static;
+        margin: 1rem 10rem;
+        margin-top: 4rem;
+        padding: 3rem 4rem;
+    }
+
+    .circleButton:hover {
+        transform: scale(1.2);
+        transition: all 1s ease;
     }
 }
