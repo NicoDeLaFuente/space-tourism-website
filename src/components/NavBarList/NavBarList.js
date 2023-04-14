@@ -1,30 +1,31 @@
 import "./NavBarList.css"
 
 import CloseButton from "../CloseButton/CloseButton";
+import { Link } from "react-router-dom";
 
 const NavBarList = () => {
     return <nav className="nav disabled">
         <CloseButton />
         <ul className="navList">
             <li>
-                <a href="#" className="active">
+                <Link to={"/"} className="active">
                     <span>00</span>HOME
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="#">
+                <Link to={"/destination"}>
                     <span>01</span>DESTINATION
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="#">
+                <Link to={"/crew"}>
                     <span>02</span>CREW
-                </a>
+                </Link>
             </li>
             <li>
-                <a href="#">
+                <Link to={"/technology"}>
                     <span>03</span>TECHNOLOGY
-                </a>
+                </Link>
             </li>
         </ul>
     </nav>
