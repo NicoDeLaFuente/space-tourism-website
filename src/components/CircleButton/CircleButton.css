@@ -1,8 +1,37 @@
 .circleButton {
     font-family: 'Bellefair', serif;;
-    font-size: 30px;
-    padding: 6.5rem 2.5rem;
-    border: none;
+    font-size: 25px;
+    padding: 4rem 2rem;
+    margin: 0 5rem;
+    margin-top: 1.25rem;
+    border: transparent;
     border-radius: 50%;
     letter-spacing: 2.7px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+    .circleButton {
+        margin: 0 15rem;
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .circleButton {
+        margin: 1rem 10rem;
+        margin-top: 4rem;
+        padding: 3rem 4rem;
+    }
+
+    .circleButton:hover {
+        transform: scale(1.2);
+        transition: all 1s ease;
+    }
+
+    @keyframes transform {
+        0% {background-color: red;}
+        50% {background-color: red;}
+        100%{backdrop-filter: blur(40%);}
+    }
 }

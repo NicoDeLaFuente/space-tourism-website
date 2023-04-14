@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .nav {
     position: absolute;
     top:0;
@@ -96,8 +100,20 @@
     .navList a {
         display:flex;
         align-items: center;
-        border-bottom: 2px solid #FFFFFF;
+        border-bottom: 3px solid transparent;
+    }
 
+    .navList .active {
+        border-color: #FFFFFF
+    }
+    
+
+    .navList a:hover {
+        border-color:grey;
+    }
+
+    .navList .active:hover {
+        border-color: #FFFFFF;
     }
 
     .navList a span {

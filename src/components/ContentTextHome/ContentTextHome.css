@@ -7,19 +7,63 @@
 
 .principalText h5 {
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 13px;
-    letter-spacing: 4.75px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 3px;
     text-align: center;
 }
 
 .principalText h1 {
     font-family: 'Bellefair', serif;
-    font-size: 80px;
+    font-size: 100px;
     text-align:center;
+    font-weight: 400;
 }
 
 .principalText p {
-    font-family: 'Barlow Condensed', sans-serif;;
+    font-family: 'Barlow Condensed', sans-serif;
     text-align:center;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight:lighter;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 767px) {
+
+    .principalText h5 {
+        font-size: 18px;
+    }
+
+    .principalText h1 {
+        font-size: 150px;
+        line-height: 1;
+    }
+
+    .principalText p {
+        margin: 0 8rem;
+    }
+
+}
+
+@media screen and (min-width: 1439px) {
+    .principalText h5 {
+        text-align: start;
+        margin: 0 8rem;
+        font-size: 25px;
+        letter-spacing: 4.75px;
+    }
+
+    .principalText h1 {
+        text-align: start;
+        margin: 0 8rem;
+        line-height: normal;
+        
+    }
+
+    .principalText p {
+        text-align: start;
+        margin-right: 19rem;
+    }
+
 }

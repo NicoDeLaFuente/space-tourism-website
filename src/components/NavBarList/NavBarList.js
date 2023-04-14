@@ -7,7 +7,7 @@ const NavBarList = () => {
         <CloseButton />
         <ul className="navList">
             <li>
-                <a href="#">
+                <a href="#" className="active">
                     <span>00</span>HOME
                 </a>
             </li>
