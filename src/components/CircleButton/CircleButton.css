@@ -1,0 +1,8 @@
+.circleButton {
+    font-family: 'Bellefair', serif;;
+    font-size: 30px;
+    padding: 6.5rem 2.5rem;
+    border: none;
+    border-radius: 50%;
+    letter-spacing: 2.7px;
+}

@@ -1,0 +1,25 @@
+.principalText {
+    color: #FFFFFF;
+    display:flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.principalText h5 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 13px;
+    letter-spacing: 4.75px;
+    text-align: center;
+}
+
+.principalText h1 {
+    font-family: 'Bellefair', serif;
+    font-size: 80px;
+    text-align:center;
+}
+
+.principalText p {
+    font-family: 'Barlow Condensed', sans-serif;;
+    text-align:center;
+    font-size: 15px;
+}

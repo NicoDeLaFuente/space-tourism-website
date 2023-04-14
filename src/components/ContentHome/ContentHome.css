@@ -1,0 +1,7 @@
+.contentHome {
+    padding:2rem;
+    padding-top: 5rem;
+    display:flex;
+    flex-direction: column;
+    gap: 3rem;
+}
