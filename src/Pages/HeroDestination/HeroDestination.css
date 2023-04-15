@@ -1,6 +1,20 @@
 .heroDestination {
     background-image: url("./destination/background-destination-mobile.jpg");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    height: 850px;
     
+}
+
+@media screen and (min-width: 767px){
+    .heroDestination {
+        background-image: url("./destination/background-destination-tablet.jpg");
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .heroDestination {
+        background-image: url("./destination/background-destination-desktop.jpg");
+    }
 }
