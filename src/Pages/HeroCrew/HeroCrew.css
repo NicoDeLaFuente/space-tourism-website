@@ -5,3 +5,9 @@
     background-repeat: no-repeat;
     height: 100vh;
 }
+
+@media screen and (min-width: 767px ){
+    .heroCrew {
+       background-image: url("./crew/background-crew-tablet.jpg"); 
+    }
+}
