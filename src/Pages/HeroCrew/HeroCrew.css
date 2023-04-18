@@ -1,0 +1,7 @@
+.heroCrew {
+    background-image: url("./crew/background-crew-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}

@@ -1,0 +1,89 @@
+.wrapperCrew {
+    padding: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageCrew {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    width: 100%;
+    border-bottom: 2px solid grey;
+}
+
+.imgCrew {
+    width: 200px;
+    height: 300px;
+    background-image: url("../../Pages/HeroCrew/crew/image-douglas-hurley.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.optionsCrew {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 1.5rem;
+}
+
+.optionsCrew li {
+    list-style-type: none;
+    color: #FFFFFF
+}
+
+.pointMenu {
+    width: 0.5rem;
+    height: .5rem;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pointMenu:hover {
+    background-color: #d0d6f9;
+}
+
+.active { 
+    background-color: #FFFFFF;
+}
+
+.details {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.5rem;
+}
+
+.jobCrew {
+    font-family: 'Bellefair', serif;
+    color: #d0d6f9;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+.nameCrew {
+    font-family: 'Bellefair', serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+.textCrew {
+    font-family: 'Bellefair', serif;
+    color: #d0d6f9;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.1rem;
+    padding-top: .5rem;
+    
+    
+}

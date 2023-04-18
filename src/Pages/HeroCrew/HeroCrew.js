@@ -1,12 +1,13 @@
 import "./HeroCrew.css"
 
 import NavBarContainer from "../../components/NavBarContainer/NavBarContainer";
+import ContentHeroCrew from "../../components/ContentHeroCrew/ContentHeroCrew";
 
 const HeroCrew = () => {
-    return <>
+    return <div className="heroCrew">
         <NavBarContainer/>
-    <h1>Soy crew</h1>
-    </>
+        <ContentHeroCrew/>
+    </div>
 }
 
 export default HeroCrew;
