@@ -145,6 +145,7 @@
 
     .imgPlanets img {
         width: 250px;
+        height: 250px;
     }
 
     .titlePlanet{
@@ -153,6 +154,10 @@
 
     .textPlanet {
         padding-inline: 3rem;
+    }
+
+    .lineDestination{
+        bottom: 1.5rem
     }
 
     .distance-time {
