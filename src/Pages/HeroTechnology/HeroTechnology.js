@@ -1,12 +1,13 @@
 import "./HeroTechnology.css"
 
 import NavBarContainer from "../../components/NavBarContainer/NavBarContainer";
+import ContentHeroTechnology from "../../components/ContentHeroTechnology/ContentHeroTechnology";
 
 const HeroTechnology = () => {
-    return <>
+    return <div className="heroTechnology">
     <NavBarContainer/> 
-        <h1>Soy technology</h1>
-    </>
+    <ContentHeroTechnology/>
+    </div>
 }
 
 export default HeroTechnology;

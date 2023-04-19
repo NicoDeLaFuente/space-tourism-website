@@ -1,0 +1,19 @@
+.heroTechnology {
+    background-image: url("./technology/background-technology-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+@media screen and (min-width: 767px ){
+    .heroTechnology{
+        background-image: url("./technology/background-technology-tablet.jpg");
+    }   
+}
+
+@media screen and (min-width: 1439px) {
+    .heroTechnology{
+        background-image: url("./technology/background-technology-desktop.jpg");
+    }
+    
+}

@@ -1,0 +1,160 @@
+.wrapperTechnology {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.img-and-details-technology {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.imageTechnology{
+    background-image: url("../../Pages/HeroTechnology/technology/image-launch-vehicle-landscape.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    padding: 2rem 0;
+}
+
+.list-and-details-technology{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.optionsTechnology{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.optionsTechnology li {
+    list-style-type: none;
+}
+
+.circleButtonTech{
+    font-family: 'Bellefair', serif;
+    background-color: transparent;
+    border: 1px solid #d0d6f9;
+    border-radius: 50%;
+    color: #FFFFFF;
+    width: 2rem;
+    height: 2rem;
+}
+
+.circleButtonTech:hover {
+    background-color:#FFFFFF;
+    color: #0b0d17;
+    border-color: transparent;
+}
+
+.detailsTechnology{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitleTechnology {
+    font-family: 'Bellefair', serif;
+    color: #d0d6f9;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 200;
+}
+
+.nameTechnology{
+    font-family: 'Bellefair', serif;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 200;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+.textTechnology{
+    font-family: 'Bellefair', serif;
+    color: #d0d6f9;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.1rem;
+    padding-top: .5rem;
+    padding-inline: 2rem;
+}
+
+@media screen and (min-width: 767px ){
+    .wrapperTechnology{
+        gap: 1.5rem;
+        align-items:flex-start ;
+    }
+
+    .padding-left {
+        padding-left: 5rem;
+    }
+
+    .imageTechnology{
+        height: 250px;
+    }
+
+    .nameTechnology{
+        font-size: 2rem;
+    }
+
+    .textTechnology{
+        padding-inline:12rem;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .img-and-details-technology{
+        flex-direction: row-reverse;
+    }
+
+    .imageTechnology{
+        background-image: url("../../Pages/HeroTechnology/technology/image-launch-vehicle-portrait.jpg");
+        height: 400px;
+
+    }
+
+    .list-and-details-technology{
+        flex-direction: row;
+        gap: none;
+        padding-inline: 15rem;
+    }
+
+    .optionsTechnology{
+        flex-direction: column;
+    }
+
+    .circleButtonTech{
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .detailsTechnology{
+        align-items: flex-start;
+    }
+
+    .nameTechnology{
+        font-size: 3.5rem;
+    }
+
+    .textTechnology{
+        padding-inline: 0;
+        padding-right: 9rem;
+        text-align: left;
+    }
+
+
+}
