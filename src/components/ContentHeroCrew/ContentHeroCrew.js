@@ -11,10 +11,10 @@ const ContentHeroCrew = () => {
             </div>
             <div className="list-and-details">
                 <ul className="optionsCrew">
-                    <li><div className="pointMenu active-back"></div></li>
-                    <li><div className="pointMenu"></div></li>
-                    <li><div className="pointMenu"></div></li>
-                    <li><div className="pointMenu"></div></li>
+                    <li><button className="pointMenu active-back"></button></li>
+                    <li><button className="pointMenu"></button></li>
+                    <li><button className="pointMenu"></button></li>
+                    <li><button className="pointMenu"></button></li>
                 </ul>
                 <div className="details">
                     <h2 className="jobCrew">commander</h2>
@@ -25,6 +25,7 @@ const ContentHeroCrew = () => {
                 </div>
             </div>
         </div>
+        <div className="img-desktop"></div>
     </div>
 }
 

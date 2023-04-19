@@ -11,12 +11,13 @@
     justify-content: center;
     height: 300px;
     width: 100%;
-    border-bottom: 2px solid grey;
+    border-bottom: 1px solid grey;
+    padding-top: 1rem;
 }
 
 .imgCrew {
     width: 290px;
-    height: 300px;
+    height: 280px;
     background-image: url("../../Pages/HeroCrew/crew/image-douglas-hurley.png");
     background-size: contain;
     background-repeat: no-repeat;
@@ -37,6 +38,8 @@
 }
 
 .pointMenu {
+    text-decoration: none;
+    border:none;
     width: 0.5rem;
     height: .5rem;
     background-color: grey;
@@ -86,13 +89,17 @@
     padding-top: .5rem;
 }
 
+.img-desktop{
+    display:none;
+}
+
 @media screen and (min-width: 767px ){
 
     .wrapperCrew {
         padding: 2rem;
         align-items: flex-start;
         gap: 1rem;
-        
+        padding-bottom: 0;
     }
 
     .img-and-details-crew {
@@ -118,7 +125,7 @@
     }
 
     .imgCrew {
-        height: 330px;
+        height: 315px;
         width: 350px;
     }
     
@@ -139,5 +146,66 @@
 
     .textCrew{
         padding: 0;
+    }
+}
+
+@media screen and (min-width: 1439px) {
+    .img-and-details-crew {
+        flex-direction: row-reverse;
+    }
+
+    .imageCrew{
+        max-height: 100%;
+    }
+
+    .imgCrew{
+        background-image: none;
+        height: 380px;
+        width: 400px
+    }
+
+    .list-and-details {
+        align-items: flex-start;
+        gap: 3rem;
+        padding-top: 5rem;
+    }
+
+    .pointMenu {
+        width: .75rem;
+        height: .75rem;
+        cursor: pointer;
+    }
+
+    .pointMenu:hover{
+        background-color: #d0d6f9;
+    }
+
+
+    .details {
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nameCrew{
+        text-align: left;
+    }
+
+    .textCrew {
+        text-align: left;
+        padding-right: 13rem;
+        padding-top: 1rem;
+    }
+
+    .img-desktop {
+        display: block;
+        background-image: url("../../Pages/HeroCrew/crew/image-douglas-hurley.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 70%;
+        width: 100%;
+        position: absolute;
+        bottom:0;
+        right: 15rem;
     }
 }

@@ -11,3 +11,9 @@
        background-image: url("./crew/background-crew-tablet.jpg"); 
     }
 }
+
+@media screen and (min-width: 1439px) {
+    .heroCrew {
+        background-image: url("./crew/background-crew-desktop.jpg");
+    }
+}
