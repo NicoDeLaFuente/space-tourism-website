@@ -1,47 +1,82 @@
 import "./ContentHeroDestination.css"
 import Moon from "../../Pages/HeroDestination/destination/image-moon.webp"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
+import { DataContext } from "../../context/DataContext/DataContext";
+import { useContext, useEffect, useState } from "react";
 
 const ContentHeroDestination = () => {
+
+    const {planets} = useParams();
+
+
+    const {moonData, marsData, europeData, titanData} = useContext(DataContext)
+
+    const [idMenu, setIdMenu] = useState("moon")
+    const [info, setInfo] = useState({})
+
+    useEffect(() => {
+        const dataJson = fetch("../../../data.json")
+        .then(response => (response.json()))
+        
+
+        if(idMenu) {
+            dataJson.then(data => data.destinations.map(destination => {
+                if (destination.name === idMenu) {
+                    setInfo(destination)
+                }
+            }))
+        }
+
+    },[idMenu])
+
+
+    function clickHandlerPlanets (e) {
+        const buttonsPlanets = document.querySelectorAll(".planetsItem")
+        buttonsPlanets.forEach(button => {
+            button.classList.remove("active")
+        })
+        e.currentTarget.classList.add("active")
+        setIdMenu(e.currentTarget.id)
+    }
+
+
 
     return <div className="wrapperDestination">
         <h2 className="titleDestination"><span>01</span>PICK YOUR DESTINATION</h2>
         <div className="img-and-details">
             <div className="imgPlanets">
-                <img src={Moon} alt="Planet img" />
+                <img src={info.images.png} alt="Planet img" />
             </div>
             <div className="menu-and-details">
                 <ul className="planetsMenu">
 
                     <li>
-                        <Link to={/destiination/} className="planetsItem active">Moon</Link>
+                        <Link to={"/destination/moon"} id="moon" onClick={clickHandlerPlanets} className="planetsItem active">Moon</Link>
                     </li>
                     <li>
-                        <Link to={/destination/} className="planetsItem">Mars</Link>
+                        <Link to={"/destination/mars"} id="mars" onClick={clickHandlerPlanets} className="planetsItem">Mars</Link>
                     </li>
                     <li>
-                        <Link to={/destination/} className="planetsItem">Europa</Link>
+                        <Link to={"/destination/europa"} id="europa" onClick={clickHandlerPlanets} className="planetsItem">Europa</Link>
                     </li>
                     <li>
-                        <Link to={/destination/} className="planetsItem">Titan</Link>
+                        <Link to={"/destination/titan"} id="titan" onClick={clickHandlerPlanets} className="planetsItem">Titan</Link>
                     </li>
                 </ul>
 
                 <div className="planet">
-                    <h1 className="titlePlanet">Moon</h1>
-                    <p className="textPlanet">  See our planet as you’ve never seen it before. A perfect relaxing trip away to help
-                        regain perspective and come back refreshed. While you’re there, take in some history
-                        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+                    <h1 className="titlePlanet">{info.name}</h1>
+                    <p className="textPlanet">{info.description}</p>
                 </div>
                 <div className="lineDestination"></div>
                 <div className="distance-time">
                     <div className="distance">
                         <h4>AVG. DISTANCE</h4>
-                        <h3>384,400 km</h3>
+                        <h3>{info.distance}</h3>
                     </div>
                     <div className="time">
                         <h4>EST. TRAVEL TIME</h4>
-                        <h3>3 DAYS</h3>
+                        <h3>{info.travel}</h3>
                     </div>
                 </div>
             </div>

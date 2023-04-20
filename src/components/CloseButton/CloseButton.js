@@ -1,8 +1,8 @@
 import "./CloseButton.css"
 
-const CloseButton = () => {
-    return <button className="closeButton">
-        <i class="bi bi-x"></i>
+const CloseButton = ({onClick}) => {
+    return <button onClick={onClick} className="closeButton">
+        <i className="bi bi-x"></i>
     </button>
 }
 

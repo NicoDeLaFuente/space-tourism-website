@@ -1,9 +1,9 @@
 import "./BurgerButton.css";
 
-const BurgerButton = () => {
+const BurgerButton = ({onClick}) => {
 
-    return  <button className="burgerMenu">
-                <i class="bi bi-list"></i>
+    return  <button onClick={onClick} id="burgerButton" className="burgerMenu">
+                <i className="bi bi-list"></i>
             </button>
 }
 
