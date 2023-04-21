@@ -4,6 +4,7 @@ import NavBarList from "../NavBarList/NavBarList";
 import LogoImg from "../LogoImg/LogoImg";
 import Line from "../Line/Line";
 import BurgerButton from "../BurgerButton/BurgerButton";
+import { useEffect } from "react";
 
 
 const NavBarContainer = () => {
@@ -17,6 +18,10 @@ const NavBarContainer = () => {
       document.querySelector("#navBar").classList.add("disabled")
       document.querySelector("#burgerButton").classList.remove("disabled")
   }
+
+  useEffect(() => {
+    
+  })
 
   function menuActive (e) {
     const buttonMenu = document.querySelectorAll(".navList a")

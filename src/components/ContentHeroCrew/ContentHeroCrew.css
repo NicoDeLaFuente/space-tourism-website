@@ -18,10 +18,6 @@
 .imgCrew {
     width: 290px;
     height: 280px;
-    background-image: url("../../Pages/HeroCrew/crew/image-douglas-hurley.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
 .optionsCrew {
@@ -170,7 +166,7 @@
         padding-top: 5rem;
     }
 
-    .pointMenu {
+    /* .pointMenu {
         width: .75rem;
         height: .75rem;
         cursor: pointer;
@@ -178,7 +174,7 @@
 
     .pointMenu:hover{
         background-color: #d0d6f9;
-    }
+    } */
 
 
     .details {
@@ -198,10 +194,6 @@
 
     .img-desktop {
         display: block;
-        background-image: url("../../Pages/HeroCrew/crew/image-douglas-hurley.png");
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: contain;
         height: 70%;
         width: 100%;
         position: absolute;
