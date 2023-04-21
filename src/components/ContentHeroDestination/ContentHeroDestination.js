@@ -1,12 +1,9 @@
 import "./ContentHeroDestination.css"
-import Moon from "../../Pages/HeroDestination/destination/image-moon.webp"
-import { Link, useParams } from "react-router-dom"
+import { Link } from "react-router-dom"
 import { DataContext } from "../../context/DataContext/DataContext";
 import { useContext, useEffect, useState } from "react";
 
 const ContentHeroDestination = () => {
-
-    const {planets} = useParams();
 
 
     const {moonData, marsData, europeData, titanData} = useContext(DataContext)
@@ -45,7 +42,7 @@ const ContentHeroDestination = () => {
         <h2 className="titleDestination"><span>01</span>PICK YOUR DESTINATION</h2>
         <div className="img-and-details">
             <div className="imgPlanets">
-                <img src={`../images/image-${info.name}.png`} alt={`Image ${info.name}`} />
+                <img src={info.images} alt={info.name} />
             </div>
             <div className="menu-and-details">
                 <ul className="planetsMenu">

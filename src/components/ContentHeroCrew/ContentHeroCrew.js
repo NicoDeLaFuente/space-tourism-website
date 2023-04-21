@@ -1,5 +1,4 @@
 import "./ContentHeroCrew.css"
-import imageCrew from "../../Pages/HeroCrew/crew/image-douglas-hurley.png"
 import { useEffect, useState } from "react"
 
 const ContentHeroCrew = () => {
