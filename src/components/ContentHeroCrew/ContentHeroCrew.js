@@ -27,15 +27,11 @@ const ContentHeroCrew = () => {
         
     }, [idMenu])
 
-
-    
-
-
     return <div className="wrapperCrew">
         <h2 className="titleDestination"><span>02</span>Meet your Crew</h2>
         <div className="img-and-details-crew">
             <div className="imageCrew">
-                <img src={info.images} alt={`imagen de ${info.name}`} className="imgCrew" />
+                <img src={info.images} alt={info.name} className="imgCrew" />
             </div>
             <div className="list-and-details">
                 <ul className="optionsCrew">
@@ -50,9 +46,6 @@ const ContentHeroCrew = () => {
                     <p className="textCrew">{info.bio}</p>
                 </div>
             </div>
-        </div>
-        <div className="img-desktop">
-            <img src={info.images} alt={`imagen de ${info.name}`}/>
         </div>
     </div>
 }

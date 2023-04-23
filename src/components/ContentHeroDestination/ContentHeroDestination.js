@@ -1,13 +1,8 @@
 import "./ContentHeroDestination.css"
 import { Link } from "react-router-dom"
-import { DataContext } from "../../context/DataContext/DataContext";
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ContentHeroDestination = () => {
-
-
-    const {moonData, marsData, europeData, titanData} = useContext(DataContext)
-
     const [idMenu, setIdMenu] = useState("moon")
     const [info, setInfo] = useState({})
 

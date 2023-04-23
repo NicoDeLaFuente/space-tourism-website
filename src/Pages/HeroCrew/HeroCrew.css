@@ -9,11 +9,13 @@
 @media screen and (min-width: 767px ){
     .heroCrew {
        background-image: url("./crew/background-crew-tablet.jpg"); 
+       height:max-content
     }
 }
 
 @media screen and (min-width: 1439px) {
     .heroCrew {
         background-image: url("./crew/background-crew-desktop.jpg");
+        height: 100vh;
     }
 }

@@ -9,7 +9,7 @@
 .imageCrew {
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 320px;
     width: 100%;
     border-bottom: 1px solid grey;
     padding-top: 1rem;
@@ -17,7 +17,7 @@
 
 .imgCrew {
     width: 290px;
-    height: 280px;
+    height: 290px;
 }
 
 .optionsCrew {
@@ -92,7 +92,9 @@
 @media screen and (min-width: 767px ){
 
     .wrapperCrew {
-        padding: 2rem;
+        flex-grow: 1;
+        padding: 0 2rem;
+        padding-top: 2rem;
         align-items: flex-start;
         gap: 1rem;
         padding-bottom: 0;
@@ -117,12 +119,14 @@
 
     .imageCrew{
         border: none;
-        max-height: 400px;
+        height: 320px;
     }
 
     .imgCrew {
-        height: 315px;
-        width: 350px;
+        margin:0;
+        padding:0;
+        object-fit: fill;
+        max-height: 300px;
     }
     
     .details {
@@ -151,13 +155,11 @@
     }
 
     .imageCrew{
-        max-height: 100%;
     }
 
     .imgCrew{
-        background-image: none;
-        height: 380px;
-        width: 400px
+        position: relative;
+        height: 100%;
     }
 
     .list-and-details {
@@ -166,16 +168,10 @@
         padding-top: 5rem;
     }
 
-    /* .pointMenu {
+    .pointMenu {
         width: .75rem;
         height: .75rem;
-        cursor: pointer;
     }
-
-    .pointMenu:hover{
-        background-color: #d0d6f9;
-    } */
-
 
     .details {
         align-items: flex-start;
